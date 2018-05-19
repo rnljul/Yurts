@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: myservice
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    show-sql: true
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: roma
+    password: roma
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+server:
+  port: 9999
+  context-path: /myservice/home
+
+
